@@ -1,4 +1,4 @@
-package com.jk.controller;
+﻿package com.jk.controller;
 
 import com.jk.bean.Book;
 import com.jk.bean.Boostrap;
@@ -21,6 +21,7 @@ public class BookController {
     public String addUser(Book t) {
         diaoService.addUser(t);
         System.out.println("服务端发来的请求");
+        System.out.println("客户端发来的请求");
         return "1";
     }
 
