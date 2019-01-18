@@ -20,6 +20,7 @@ public class BookController {
     @RequestMapping("addUser")
     public String addUser(Book t) {
         diaoService.addUser(t);
+        System.out.println("服务端发来的请求");
         return "1";
     }
 
